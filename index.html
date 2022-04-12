@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title text-center">
+            <h1>BÀI TẬP JS BUỔI 2-3</h1>
+        </div>
+        <div class="content">
+            <div class="row">
+
+                <!-- Tính tiền lương nhân viên -->
+
+                <div class="content__item col-lg-6 col-xl-6">
+                    <div class="content__item--title text-center">
+                        <h3>Tính tiền lương nhân viên</h3>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Lương cơ bản</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="txtluong" name="luongcoban" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Số ngày làm</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="txtngaylam" name="songaylam" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname"></label>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button id="btnCongLuong" class="btn btn-success" type="button">Kết quả</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject"></label>
+                            </div>
+                            <div class="col-75 ">
+                                <textarea id="subject" class="result" name="subject"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Quy đổi tiền -->
+
+                <div class="content__item col-lg-6 col-xl-6">
+                    <div class="content__item--title text-center">
+                        <h3>Quy đổi tiền</h3>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Giá VNĐ</label>
+                            </div>
+                            <div class="col-75">
+                                <label class="result" for="fname">23.500</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Số USD</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="txtUSD" name="soUSD" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname"></label>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button id="btnVND" class="btn btn-success" type="button">Kết quả</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject"></label>
+                            </div>
+                            <div class="col-75 ">
+                                <textarea id="txtVND" class="result" name="subject"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tính diện tích, chu vi hình chữ nhật -->
+
+
+                <div class="content__item col-lg-6 col-xl-6">
+                    <div class="content__item--title text-center">
+                        <h3>Tính diện tích, chu vi hình chữ nhật    </h3>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Chiều dài</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="txtChieuDai" name="luongcoban" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Chiều rộng</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="txtChieuRong" name="songaylam" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname"></label>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button id="btnCVDT" class="btn btn-success" type="button">Kết quả</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject"></label>
+                            </div>
+                            <div class="col-75 ">
+                                <textarea id="txtCV" class="result" name="subject"></textarea>
+                                <textarea id="txtDT" class="result" name="subject"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tính giá trị trung bình -->
+
+                <div class="content__item col-lg-6 col-xl-6">
+                    <div class="content__item--title text-center">
+                        <h3>Tính tổng 2 ký số</h3>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Số thực</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="txtSoThuc" name="soUSD" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname"></label>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button id="btnSoThuc" class="btn btn-success" type="button">Kết quả</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject"></label>
+                            </div>
+                            <div class="col-75 ">
+                                <textarea id="txtTongKySo" class="result" name="subject"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tính giá trị trung bình của 5 số thực -->
+
+                <div class="content__item col-lg-6 col-xl-6">
+                    <div class="content__item--title  text-center">
+                        <h3>Tính giá trị trung bình của 5 số thực</h3>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">Số thứ 1</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="txtSothu1" name="firstname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Số thứ 2</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="txtSothu2" name="lastname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Số thứ 3</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="txtSothu3" name="lastname" placeholder=""">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Số thứ 4</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="txtSothu4" name="lastname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Số thứ 5</label>
+                                </div>
+                                <div class="col-75">    
+                                    <input type="text" id="txtSothu5" name="lastname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname"></label>
+                                </div>
+                                <div class="col-75 d-grid gap-2">
+                                    <button id="btnGiaTriTB" class="btn btn-success" type="button">Kết quả</button>
+                                </div>
+                            </div>
+                            <div class="row">   
+                                <div class="col-25">
+                                    <label for="subject"></label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="txtgiaTriTB" class="result" name="subject"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
